@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An example of a web page showcasing enhanced HTML5 content, including lists, tables, media, and a comprehensive, validated form.">
+    <title>Enhanced HTML5 Content & Forms</title>
+</head>
+<body>
+
+    <header>
+        <h1>Enhanced HTML5 Assignment</h1>
+        <p>A demonstration of structured content and a user-friendly form.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Structured Content Showcase</h2>
+            <p>This section demonstrates how to organize information clearly using various HTML5 elements.</p>
+
+            <h3>Key Features of HTML5</h3>
+            <ol>
+                <li>Semantic Elements like `header`, `main`, `footer`, and `section`.</li>
+                <li>Native Multimedia Support for images, audio, and video.</li>
+                <li>Enhanced Form Controls and built-in validation.</li>
+                <li>Improved Accessibility with attributes and a logical structure.</li>
+            </ol>
+
+            <h3>Product Comparison Table</h3>
+            <table>
+                <caption>Comparing three popular products by their features.</caption>
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Product A</th>
+                        <th>Product B</th>
+                        <th>Product C</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Price</td>
+                        <td>$50</td>
+                        <td>$75</td>
+                        <td>$100</td>
+                    </tr>
+                    <tr>
+                        <td>Battery Life</td>
+                        <td>10 hours</td>
+                        <td>15 hours</td>
+                        <td>20 hours</td>
+                    </tr>
+                    <tr>
+                        <td>Weight</td>
+                        <td>1.5 kg</td>
+                        <td>1.2 kg</td>
+                        <td>1.0 kg</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Embedded Media</h3>
+            <p>Here is an example of an embedded image, which can be useful for illustrating concepts or products.</p>
+            <figure>
+                <img src="C:\Users\User\OneDrive\Desktop\PLP Assignments\Web Technologies\Nature.jpg" alt="A placeholder image with text saying 'Placeholder Image'." width="600" height="300">
+                <figcaption>A placeholder image to demonstrate the `img` tag.</figcaption>
+            </figure>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>User Registration Form</h2>
+            <p>This form demonstrates a variety of HTML5 input types and validation attributes without JavaScript.</p>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <div>
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="full_name" placeholder="Brian Maina" required autocomplete="name">
+                    </div>
+                    <div>
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email_address" placeholder="brianmaina427@gmail.com" required autocomplete="email">
+                    </div>
+                    <div>
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone_number" placeholder="0790511038" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Format: 123-456-7890" required>
+                    </div>
+                    <div>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" minlength="8" required>
+                    </div>
+                    <div>
+                        <label for="birthdate">Date of Birth:</label>
+                        <input type="date" id="birthdate" name="date_of_birth" required>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferences and Choices</legend>
+                    <div>
+                        <p>Preferred Contact Method:</p>
+                        <input type="radio" id="contact_email" name="contact_method" value="email" required>
+                        <label for="contact_email">Email</label>
+                        <input type="radio" id="contact_phone" name="contact_method" value="phone">
+                        <label for="contact_phone">Phone</label>
+                    </div>
+                    <div>
+                        <label for="newsletter">
+                            <input type="checkbox" id="newsletter" name="subscribe_newsletter">
+                            Subscribe to our newsletter
+                        </label>
+                    </div>
+                    <div>
+                        <label for="country">Country:</label>
+                        <select id="country" name="country" required>
+                            <option value="" disabled selected>-- Select a Country --</option>
+                            <option value="usa">United States</option>
+                            <option value="can">Canada</option>
+                            <option value="gbr">United Kingdom</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    <div>
+                        <label for="comments">Comments:</label>
+                        <textarea id="comments" name="comments" rows="5" placeholder="Enter any additional comments here."></textarea>
+                    </div>
+                    <div>
+                        <label for="username_readonly">Username (Read-only):</label>
+                        <input type="text" id="username_readonly" name="username_readonly" value="guest_user" readonly>
+                    </div>
+                </fieldset>
+
+                <div>
+                    <button type="submit">Submit Form</button>
+                    <button type="reset">Reset Form</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 HTML5 Demo. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
